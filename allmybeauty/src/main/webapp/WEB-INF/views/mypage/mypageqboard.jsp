@@ -172,7 +172,6 @@
                 <table class="table table-striped table-border checkout-table">
                 <thead>
                   <tr>
-                     <th scope="col" style="text-align: center; "><strong>No</strong></th>
                       <th scope="col" style="text-align: center;"><strong>상품</strong></th>
                       <th scope="col" style="text-align: center;"><strong>문의내용</strong></th>
                       <th scope="col" style="text-align: center;"><strong>관리</strong></th>
@@ -186,10 +185,9 @@
                     <c:forEach items="${myPageQboardList}" var="mypageqboard">
                        <c:if test="${mypageqboard.mid eq myPagePagingDTO.mid}"> 
                          <tr>
-          				  <td style="width:6%"><c:out value="${mypageqboard.qno }"/></td>
 			          	                      	         		                      
 			                       <!-- 문의상품이름-->
-			                      <td class="hidden-xs" style="width:30%;">
+			                      <td class="hidden-xs" style="width:40%;">
 			                        <input type="hidden" name="productImage" value="${mypageqboard.repoPath }/${mypageqboard.uploadPath }/${mypageqboard.uuid }_${mypageqboard.fileName }"/>
                                      <img src='' alt="No Image" style="height: 100px; width: 100px;"/>		
                                      
